@@ -48,11 +48,25 @@ This project has significant implications for businesses offering subscription-b
 - Effective data analysis techniques
 - Customer-centric approach
 
+## Methodology
+#### Data Analysis Approach:
+- Data Cleaning: Handling missing values and data inconsistencies.
+- Data Visualization: Using PivotTables and charts to explore data.
+- SQL Queries: Extracting insights from subscription data.
+#### Steps:
+- Data Import: Loaded dataset into SQL environment.
+- Data Exploration: Analyzed subscription patterns, revenue, and cancellations.
+- Data Modeling: Created PivotTables and SQL queries for insights.
+- Data Interpretation: Identified key trends and recommendations.
+#### Data Validation:
+Verified data accuracy and consistency.
+Ensured data privacy and security.
+
 ## Prerequisites
-- Microsoft Excel
-- SQL Server
-- Power BI
-- Github
+- Microsoft Excel (PivotTables)
+- SQL Server (querying and data analysis)
+- Power BI (Visualizating the data)
+- Github (Presenting the report)
 
 
 ## Data
@@ -79,3 +93,141 @@ Analyzing customer subscription patterns, revenue, and cancellations to inform b
 - Categorical (Region, SubscriptionType, Canceled)
 - Numerical (revenue)
 - Date (SubscriptionStart, SubscriptionEnd)
+
+## Discussion of Resullt
+### Discussion of Subscription Patterns
+The pivot table "Subscription Patterns" provides an overview of revenue and customer counts across different regions (East, North, South, and West) for 2022 and the first eight months of 2023.
+
+#### Key Insights:
+1. Revenue by Region and Month:
+- 2022: Consistent revenue across regions, approximately $7.4M-$7.5M per month.
+- 2023: Similar pattern, with revenues between $7.4M-$7.6M per month.
+  
+2. Total Revenue:
+- 2022: $89.9M
+- 2023 (Jan-Aug): $59.9M
+  
+3. Customer Count by Region and Month:
+- 2022: Steady at 3,750 customers per region each month.
+- 2023: Consistent at 3,750 customers per region each month.
+  
+4. Total Customer Count:
+- 2022: 45,000
+- 2023 (Jan-Aug): 30,000
+  
+5. Regional Performance:
+- South and West regions lead in revenue.
+- East and North regions slightly lower but show stable performance.
+  
+6. Overall Trends:
+- Stable subscription patterns with low churn.
+- Opportunities for growth in East and North regions.
+
+  ### Discussion of Average Subscription Duration
+1. The pivot table shows the average subscription duration in days and months for different subscription types:
+- Basic: 365.3 days (12 months)
+- Premium: 365.4 days (12 months)
+- Standard: 365.4 days (12 months)
+  
+ 2. Implications:
+- The consistent average duration indicates that customers tend to stay subscribed for a full year regardless of the subscription type.
+- There is no significant difference in the retention period among Basic, Premium, and Standard subscriptions.
+  
+#### Key Insight:
+All subscription types have an average duration of around 365 days (12 months), indicating consistent customer retention across all types.
+
+### Discussion of Most Popular Subscription Types
+The pivot table displays the count of customers and the sum of revenue for each subscription type:
+1. Basic:
+- Count of Customers: 37,500
+- Sum of Revenue: $74,756,784
+- Premium:
+
+2. Count of Customers: 18,750
+- Sum of Revenue: $37,580,782
+- Standard:
+
+3. Count of Customers: 18,750
+- Sum of Revenue: $37,482,120
+  
+#### Key Insights:
+- Basic subscription type is the most popular, with the highest number of customers (37,500) and the highest revenue ($74,756,784).
+- Premium and Standard subscription types have an equal number of customers (18,750 each) but slightly different revenue contributions.
+- Overall, the Basic subscription type significantly leads in both customer count and revenue.
+
+### Discussion of SQL Query: Total Number of Customers from Each Region
+Query:
+sql
+```
+SELECT 
+    Region,
+    COUNT(CustomerID) AS total_customers
+FROM 
+    [dbo].[capstone-sql2]
+GROUP BY 
+    Region
+ORDER BY 
+    TotalCustomers DESC;
+```
+#### Result:
+- North: 18,750
+- East: 18,750
+- South: 18,750
+- West: 18,750
+#### Key Insight:
+Uniform Distribution: Each region has an equal number of customers (18,750), indicating a balanced distribution across all regions.
+
+### Discussion of SQL Query: Most Popular Subscription Type by Number of Customers
+#### Query:
+sql code
+```
+SELECT 
+    SubscriptionType,
+    COUNT(CustomerID) AS number_of_customers
+FROM 
+    [dbo].[capstone-sql2]
+GROUP BY 
+    SubscriptionType
+ORDER BY 
+    number_of_customers DESC;
+```
+#### Result:
+- Basic: 37,500 customers
+- Premium: 18,750 customers
+- Standard: 18,750 customers
+#### Key Insight:
+Popularity: The Basic subscription type is the most popular, with double the number of customers compared to Premium and Standard. This suggests that customers prefer the Basic subscription, potentially due to its pricing or features.
+
+### Discussion of SQL Query: Customers Who Canceled Their Subscription Within 6 Months
+#### Query:
+sql code
+```
+SELECT 
+    CustomerID,
+    CustomerName,
+    SubscriptionType,
+    SubscriptionStart,
+    SubscriptionEnd,
+    DATEDIFF(month, SubscriptionStart, SubscriptionEnd) AS subscription_duration_months
+FROM 
+    [dbo].[capstone-sql2]
+WHERE 
+    Canceled = 'TRUE'
+    AND DATEDIFF(month, SubscriptionStart, SubscriptionEnd) <= 6;
+```
+#### Result:
+No results found.
+#### Key Insight:
+Customer Retention: There were no customers who canceled their subscription within 6 months. This indicates strong customer retention during the early months of subscription, suggesting satisfaction with the service or effective onboarding and engagement strategies.
+
+
+
+
+
+
+
+
+
+
+
+
