@@ -344,9 +344,9 @@ FROM
 GROUP BY 
     Canceled;
 ```
-SQL Query 2: Summarize Active and Canceled Subscriptions
-sql
-Copy code
+#### Query 2: Summarize Active and Canceled Subscriptions
+sql code
+```
 SELECT 
     SUM(CASE WHEN Canceled = 0 THEN 1 ELSE 0 END) AS ActiveSubscriptions,
     SUM(CASE WHEN Canceled = 1 THEN 1 ELSE 0 END) AS CanceledSubscriptions
