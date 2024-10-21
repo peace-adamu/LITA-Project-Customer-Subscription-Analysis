@@ -196,7 +196,8 @@ GROUP BY
 ORDER BY 
     TotalCustomers DESC;
 ```
-#### Result:
+#### Result:![sql1](https://github.com/user-attachments/assets/68ac37d5-e9cf-43a5-a859-15f81451b52e)
+
 - North: 18,750
 - East: 18,750
 - South: 18,750
@@ -218,7 +219,8 @@ GROUP BY
 ORDER BY 
     number_of_customers DESC;
 ```
-#### Result:
+#### Result:![sql2](https://github.com/user-attachments/assets/9fc45da7-c15c-4a72-a215-9243782d2a34)
+
 - Basic: 37,500 customers
 - Premium: 18,750 customers
 - Standard: 18,750 customers
@@ -242,7 +244,8 @@ WHERE
     Canceled = 'TRUE'
     AND DATEDIFF(month, SubscriptionStart, SubscriptionEnd) <= 6;
 ```
-#### Result:
+#### Result:![sql3](https://github.com/user-attachments/assets/d0955502-d666-471d-90e8-622bfa368f8e)
+
 No results found.
 #### Key Insight:
 Customer Retention: There were no customers who canceled their subscription within 6 months. This indicates strong customer retention during the early months of subscription, suggesting satisfaction with the service or effective onboarding and engagement strategies.
@@ -257,7 +260,8 @@ SELECT
 FROM 
     [dbo].[capstone-sql2];
 ```
-#### Result:
+#### Result:![sql4](https://github.com/user-attachments/assets/ca6381be-b751-4181-bf73-518700d1bfb6)
+
 - Average Subscription Duration (Days): 365 days
 -Average Subscription Duration (Months): 12 months
 #### Key Insight:
@@ -279,7 +283,8 @@ FROM
 WHERE 
     DATEDIFF(month, SubscriptionStart, SubscriptionEnd) > 12;
 ```
-#### Results:
+#### Results:![sql5](https://github.com/user-attachments/assets/9ac41922-6664-4acd-898c-0e41ee5df634)
+
 No Results: The query returned no customers with subscriptions longer than 12 months.
 #### Key Points:
 -Subscription Duration: All subscriptions in the dataset are 12 months or less.
@@ -298,7 +303,8 @@ FROM
 GROUP BY 
     SubscriptionType;
 ```
-#### Results:
+#### Results:![sql6](https://github.com/user-attachments/assets/7572d998-f0e5-4b61-be7e-62885b0929eb)
+
 - Basic: $74,756,784
 - Premium: $37,580,782
 - Standard: $37,482,120
@@ -323,7 +329,8 @@ GROUP BY
 ORDER BY 
     TotalCancellations DESC;
 ```
-#### Results:
+#### Results:![sql7](https://github.com/user-attachments/assets/8c97ad54-0ac6-44b7-ae2c-48fff357cee9)
+
 - West: 11,250 cancellations
 - South: 11,250 cancellations
 - North: 11,250 cancellations
@@ -348,12 +355,14 @@ GROUP BY
 sql code
 ```
 SELECT 
-    SUM(CASE WHEN Canceled = 0 THEN 1 ELSE 0 END) AS ActiveSubscriptions,
-    SUM(CASE WHEN Canceled = 1 THEN 1 ELSE 0 END) AS CanceledSubscriptions
+    SUM(CASE WHEN Canceled = 'FALSE' THEN 1 ELSE 0 END) AS ActiveSubscriptions,
+    SUM(CASE WHEN Canceled = 'TRUE' THEN 1 ELSE 0 END) AS CanceledSubscriptions
 FROM 
     [dbo].[capstone-sql2];
+
 ```
-#### Results:
+#### Results:![sql8](https://github.com/user-attachments/assets/346c2b46-2d03-4664-8cdf-ea243c5e9221)
+
 - Active Subscriptions: 41,250
 - Canceled Subscriptions: 33,750
 #### Key Points:
