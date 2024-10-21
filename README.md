@@ -16,19 +16,20 @@ Customer Retention and Churn Rates: Understanding factors influencing customer l
 
 
 ## Table of Contents
-- [Project Overview](docs/project_overview.md)
-- [Excel Analysis](excel/analysis.xlsx)
-- [SQL Queries](sql/queries.sql)
-- [Power BI Dashboard](powerbi/dashboard.pbix)
-- [Analysis Report](docs/analysis_report.md)
+- [Project Preview](#docs/project-preview.md)
+- [Project Objective](#project-objective)
+- [Project Significance](#project-significance)
+- [Methodology](#methodology)
+- [Prerequisites](#Prerequisities)
+- [Discussion of Result](#discussion-of-result)
 
-## Objectives
+## Project Objectives
 - Analyze subscription patterns using Excel pivot tables.
 - Calculate average subscription duration and identify popular subscription types.
 - Extract key insights using SQL queries.
 - Visualize findings with a Power BI dashboard.
 
-## Significance
+## Project Significance
 Customer Subscription Analysis Project:
 This project has significant implications for businesses offering subscription-based services-:
 - Enhances customer understanding and retention.
@@ -67,10 +68,10 @@ This project has significant implications for businesses offering subscription-b
 - Github (Presenting the report)
 
 
-## Data
-The dataset used in this project is gotten from LITA
+#### Data
+The dataset used in this project is gotten from Ladies in Tech Africa(LITA)
 
-### This dataset contains information about customer subscriptions, including:
+##### This dataset contains information about customer subscriptions, including:
 Key Columns:
 1. Customer Information:
 - CustomerID (unique identifier)
