@@ -67,12 +67,11 @@ This project has significant implications for businesses offering subscription-b
 - Power BI (Visualizating the data)
 - Github (Presenting the report)
 
-
-#### Data
+## Data
 The dataset used in this project is gotten from Ladies in Tech Africa(LITA)
 
-##### This dataset contains information about customer subscriptions, including:
-Key Columns:
+ This dataset contains information about customer subscriptions, including:
+#### Key Columns:
 1. Customer Information:
 - CustomerID (unique identifier)
 - CustomerName
@@ -185,7 +184,7 @@ The pivot table displays the count of customers and the sum of revenue for each 
 
 ### Discussion of SQL Query: Total Number of Customers from Each Region
 Query:
-sql
+sql code
 ```
 SELECT 
     Region,
