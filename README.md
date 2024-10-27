@@ -1,6 +1,7 @@
 # Project title: Customer Subscription Analysis ![-5808992407017075915_121](https://github.com/user-attachments/assets/36508248-1f59-4fc8-a64b-a61b1b1e9a18)
 
 ## Table of Contents
+- [Acknowledgments](#acknowledgments)
 - [Project Preview](#docs/project-preview.md)
 - [Project Objective](#project-objective)
 - [Project Significance](#project-significance)
@@ -8,6 +9,11 @@
 - [Prerequisites](#Prerequisities)
 - [Discussion of Result](#discussion-of-result)
 
+
+## Acknowledgments
+I would like to express my deepest gratitude to the following individuals and organizations for their support and guidance throughout this project:
+First and foremost, I acknowledge the Ladies in Tech Africa organization for providing the platform and resources necessary to develop my skills in Excel and data analysis. Their commitment to empowering women in technology is truly inspiring.
+I would also like to extend my sincere appreciation to my tutors,Mr. Adamu Mu'azu, Mr. Femi Ayodele and Mr. Tee Dee their expertises, patiences, and dedications were instrumental in my success. Also their guidances were invaluable, and I am grateful for the opportunity to learn from them.
 
 ## Project Preview
 This project involves analyzing customer data for a subscription service to identify segments and trends, understanding customer behavior, tracking subscription types, and identifying key trends in cancellations and renewals.
