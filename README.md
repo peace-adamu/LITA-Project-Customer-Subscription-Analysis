@@ -1,4 +1,13 @@
-# Project title: Customer Subscription Analysis 
+# Project title: Customer Subscription Analysis ![-5808992407017075915_121](https://github.com/user-attachments/assets/36508248-1f59-4fc8-a64b-a61b1b1e9a18)
+
+## Table of Contents
+- [Project Preview](#docs/project-preview.md)
+- [Project Objective](#project-objective)
+- [Project Significance](#project-significance)
+- [Methodology](#methodology)
+- [Prerequisites](#Prerequisities)
+- [Discussion of Result](#discussion-of-result)
+
 
 ## Project Preview
 This project involves analyzing customer data for a subscription service to identify segments and trends, understanding customer behavior, tracking subscription types, and identifying key trends in cancellations and renewals.
@@ -14,14 +23,6 @@ Regional Subscription Trends: Identifying geographic patterns in subscriptions a
 Popular Subscription Types: Analyzing revenue streams and customer preferences
 Customer Retention and Churn Rates: Understanding factors influencing customer loyalty
 
-
-## Table of Contents
-- [Project Preview](#docs/project-preview.md)
-- [Project Objective](#project-objective)
-- [Project Significance](#project-significance)
-- [Methodology](#methodology)
-- [Prerequisites](#Prerequisities)
-- [Discussion of Result](#discussion-of-result)
 
 ## Project Objectives
 - Analyze subscription patterns using Excel pivot tables.
