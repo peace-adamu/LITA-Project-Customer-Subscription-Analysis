@@ -8,6 +8,7 @@
 - [Methodology](#methodology)
 - [Prerequisites](#Prerequisities)
 - [Discussion of Result](#discussion-of-result)
+- [Conclusion](#conclusion)
 
 
 ## Acknowledgments
@@ -376,6 +377,79 @@ FROM
 - Active Subscriptions: There are 41,250 active subscriptions.
 - Canceled Subscriptions: There are 33,750 canceled subscriptions.
 These queries provide an overview of the total number of active and canceled subscriptions, helping to understand the overall subscription status of the customer base.
+
+
+### Power BI Visualization
+
+![pbi1](https://github.com/user-attachments/assets/ee233249-9fef-48d2-8b3a-2fd2fa4ed74c)
+![pbi2](https://github.com/user-attachments/assets/e7882cec-ada3-4ff9-aa8c-03cb42cadc52)
+
+Summary of Customer Subscription Analysis
+##### Key Metrics:
+- Active Subscriptions: 41,250
+- Total Subscriptions: 15,787,500
+- Cancelled Subscriptions: 33,750
+- Cohort Month (August): 2023 (08)
+Subscription Type by Revenue:
+- Basic: $74,756,784
+- Premium: $37,580,782
+- Standard: $37,482,120
+Regional Breakdown:
+East (Basic):
+- Revenue: $37,387,894
+- Active Subscriptions: 18,750
+- Cancelled Subscriptions: 0
+- Cohort Month: July 2023
+North (Basic):
+- Revenue: $37,368,890
+- Active Subscriptions: 7,500
+- Cancelled Subscriptions: 11,250
+- Cohort Month: May 2023
+South (Premium):
+- Revenue: $37,580,782
+- Active Subscriptions: 7,500
+- Cancelled Subscriptions: 11,250
+- Cohort Month: June 2023
+West (Standard):
+- Revenue: $37,482,120
+- Active Subscriptions: 7,500
+- Cancelled Subscriptions: 11,250
+- Cohort Month: August 2023
+##### Insights:
+Basic Subscription:
+- Generates the highest revenue.
+- The East region has the highest active subscriptions and no cancellations.
+- North region has a significant number of cancellations.
+Premium and Standard Subscriptions:
+- Display similar performance in terms of active and cancelled subscriptions.
+- The South and West regions have consistent active and cancelled subscriptions.
+Revenue Trends:
+- East region has stable revenue with no cancellations.
+- North region shows fluctuating revenue with high cancellations in May.
+- South region exhibits steady growth followed by a decline.
+- West region has consistent revenue with a decline in August.
+#### Recommendations:
+##### Focus on the East Region:
+- Investigate factors contributing to high active subscriptions and zero cancellations. Implement successful strategies from the East region in other regions.
+##### Analyze Cancellation Reasons:
+- Conduct a thorough analysis of the reasons behind the consistent cancellation numbers in the North, South, and West regions. Utilize insights to enhance customer retention strategies.
+##### Optimize Subscription Types:
+- Promote and optimize Basic subscriptions across other regions, given its superior performance in revenue generation.
+##### Enhance Revenue Stability:
+- Examine revenue fluctuations in the North, South, and West regions to identify and address causes of decline.
+##### Utilize Cohort Analysis:
+-Leverage cohort month data to track and improve customer retention, focusing on identified churned months.
+
+
+
+## Conclusion
+The Customer Subscription Analysis project provides comprehensive insights into subscription performance across different regions and subscription types. Key findings highlight the significant revenue generation by Basic subscriptions, particularly in the East region, which has achieved the highest active subscriptions with no recorded cancellations. Conversely, the North, South, and West regions exhibit similar active subscription numbers but suffer from higher cancellation rates.
+
+The analysis underscores the need to investigate the successful strategies employed in the East region and apply them to other regions to enhance overall subscription performance. Additionally, a detailed examination of cancellation reasons is crucial to develop targeted retention strategies. Promoting Basic subscriptions, optimizing offerings, and stabilizing revenue trends are recommended to bolster the company's subscription model.
+
+By leveraging cohort analysis and addressing identified churn periods, the company can further improve customer retention and drive sustainable growth. The insights and recommendations from this project offer a strategic roadmap to enhance subscription management and revenue optimization across all regions.
+
+
 
 
 
