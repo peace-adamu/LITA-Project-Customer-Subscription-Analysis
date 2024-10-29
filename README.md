@@ -415,7 +415,7 @@ West (Standard):
 - Active Subscriptions: 7,500
 - Cancelled Subscriptions: 11,250
 - Cohort Month: August 2023
-##### Insights:
+#### Insights:
 Basic Subscription:
 - Generates the highest revenue.
 - The East region has the highest active subscriptions and no cancellations.
@@ -438,7 +438,7 @@ Revenue Trends:
 ##### Enhance Revenue Stability:
 - Examine revenue fluctuations in the North, South, and West regions to identify and address causes of decline.
 ##### Utilize Cohort Analysis:
--Leverage cohort month data to track and improve customer retention, focusing on identified churned months.
+- Leverage cohort month data to track and improve customer retention, focusing on identified churned months.
 
 
 
