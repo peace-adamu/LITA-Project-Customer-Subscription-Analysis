@@ -13,13 +13,13 @@
 
 ## Acknowledgments
 I would like to express my deepest gratitude to the following individuals and organizations for their support and guidance throughout this project:
-First and foremost, I acknowledge the Ladies in Tech Africa organization for providing the platform and resources necessary to develop my skills in Excel and data analysis. Their commitment to empowering women in technology is truly inspiring.
-I would also like to extend my sincere appreciation to my tutors,Mr. Adamu Mu'azu, Mr. Femi Ayodele and Mr. Temidayo TeeDee their expertises, patiences, and dedications were instrumental in my success. Also their guidances were invaluable, and I am grateful for the opportunity to learn from them.
+First and foremost, I acknowledge the Ladies in Tech Africa organization through the Incubator Hub for providing the platform and resources necessary to develop my skills in data analysis. Their commitment to empowering women in technology is truly inspiring.
+I would also like to extend my sincere appreciation to my facilitators, Mr. Adamu Mu'azu, Mr. Femi Ayodele and Mr. Temidayo TeeDee their expertises, patiences, and dedications were instrumental in my success. Also their guidances were invaluable, and I am grateful for the opportunity to learn from them.
 
 ## Project Preview
 This project involves analyzing customer data for a subscription service to identify segments and trends, understanding customer behavior, tracking subscription types, and identifying key trends in cancellations and renewals.
 #### Project Highlights
-This project showcases exceptional data analysis skills, providing valuable insights into customer subscription patterns. The use of PivotTables and SQL queries effectively extracts key metrics, enabling informed business decisions.
+This project showcases exceptional data analysis skills, providing valuable insights into customer subscription patterns. The use of PivotTables and SQL queries and Power BI effectively extracts key metrics, enabling informed business decisions.
 #### Key Strengths
 Clear Objectives: Well-defined goals and concise reporting
 Effective Data Visualization: Interactive PivotTables for intuitive insights
