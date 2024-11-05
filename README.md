@@ -271,7 +271,7 @@ FROM
 #### Result:![sql4](https://github.com/user-attachments/assets/ca6381be-b751-4181-bf73-518700d1bfb6)
 
 - Average Subscription Duration (Days): 365 days
--Average Subscription Duration (Months): 12 months
+- Average Subscription Duration (Months): 12 months
 #### Key Insight:
 Consistency in Subscription Length: The average subscription duration is exactly 12 months, indicating that most customers maintain their subscriptions for a full year. This uniformity suggests that the subscription plans are likely annual, and customers are not canceling or renewing midway through the year. This consistency can be a positive indicator of customer satisfaction and the effectiveness of annual subscription models.
 
@@ -295,8 +295,8 @@ WHERE
 
 No Results: The query returned no customers with subscriptions longer than 12 months.
 #### Key Points:
--Subscription Duration: All subscriptions in the dataset are 12 months or less.
--Consistency: Aligns with the previous analysis showing an average subscription duration of 12 months.
+- Subscription Duration: All subscriptions in the dataset are 12 months or less.
+- Consistency: Aligns with the previous analysis showing an average subscription duration of 12 months.
 This query confirms that no customer has a subscription duration exceeding 12 months, suggesting a standard annual subscription model.
 
 ### SQL Query Discussion: Calculate Total Revenue by Subscription Type
@@ -343,8 +343,8 @@ ORDER BY
 - South: 11,250 cancellations
 - North: 11,250 cancellations
 #### Key Points:
--Equal Cancellations: The top three regions (West, South, and North) all have the same number of cancellations.
--Top 3 Regions: These regions are identified as having the highest number of cancellations.
+- Equal Cancellations: The top three regions (West, South, and North) all have the same number of cancellations.
+- Top 3 Regions: These regions are identified as having the highest number of cancellations.
 This query helps in identifying the regions with the highest subscription cancellations, which is crucial for understanding customer retention issues in different geographic areas.
 
 ### SQL Query Discussion: Subscription Status Summary
@@ -390,54 +390,54 @@ Summary of Customer Subscription Analysis
 - Total Subscriptions: 15,787,500
 - Cancelled Subscriptions: 33,750
 - Cohort Month (August): 2023 (08)
-Subscription Type by Revenue:
+###### Subscription Type by Revenue:
 - Basic: $74,756,784
 - Premium: $37,580,782
 - Standard: $37,482,120
-Regional Breakdown:
-East (Basic):
+###### Regional Breakdown:
+1. East (Basic):
 - Revenue: $37,387,894
 - Active Subscriptions: 18,750
 - Cancelled Subscriptions: 0
 - Cohort Month: July 2023
-North (Basic):
+2. North (Basic):
 - Revenue: $37,368,890
 - Active Subscriptions: 7,500
 - Cancelled Subscriptions: 11,250
 - Cohort Month: May 2023
-South (Premium):
+3. South (Premium):
 - Revenue: $37,580,782
 - Active Subscriptions: 7,500
 - Cancelled Subscriptions: 11,250
 - Cohort Month: June 2023
-West (Standard):
+4. West (Standard):
 - Revenue: $37,482,120
 - Active Subscriptions: 7,500
 - Cancelled Subscriptions: 11,250
 - Cohort Month: August 2023
 #### Insights:
-Basic Subscription:
+###### Basic Subscription:
 - Generates the highest revenue.
 - The East region has the highest active subscriptions and no cancellations.
 - North region has a significant number of cancellations.
-Premium and Standard Subscriptions:
+###### Premium and Standard Subscriptions:
 - Display similar performance in terms of active and cancelled subscriptions.
 - The South and West regions have consistent active and cancelled subscriptions.
-Revenue Trends:
+###### Revenue Trends:
 - East region has stable revenue with no cancellations.
 - North region shows fluctuating revenue with high cancellations in May.
 - South region exhibits steady growth followed by a decline.
 - West region has consistent revenue with a decline in August.
 #### Recommendations:
-##### Focus on the East Region:
+###### Focus on the East Region:
 - Investigate factors contributing to high active subscriptions and zero cancellations. Implement successful strategies from the East region in other regions.
-##### Analyze Cancellation Reasons:
+###### Analyze Cancellation Reasons:
 - Conduct a thorough analysis of the reasons behind the consistent cancellation numbers in the North, South, and West regions. Utilize insights to enhance customer retention strategies.
-##### Optimize Subscription Types:
+###### Optimize Subscription Types:
 - Promote and optimize Basic subscriptions across other regions, given its superior performance in revenue generation.
-##### Enhance Revenue Stability:
+###### Enhance Revenue Stability:
 - Examine revenue fluctuations in the North, South, and West regions to identify and address causes of decline.
-##### Utilize Cohort Analysis:
+###### Utilize Cohort Analysis:
 - Leverage cohort month data to track and improve customer retention, focusing on identified churned months.
 
 
